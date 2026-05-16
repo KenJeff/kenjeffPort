@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KJ Portfolio – Kendall Jefferson</title>
+    <script src="projects.js"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Syne:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./assets/KJ_favicon.ico">
+
+    <link rel="stylesheet" href="./styles/projStyle.css" />
+
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <span class="nav-brand"><a href="./index.html#">KJ Portfolio</a></span>
+        <ul class="nav-links">
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./index.html#skills">Skills</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <h1>Projects</h1>
+        <p>A collection of UI/UX, Front End, and Back End work</p>
+    </div>
+
+    <!-- ── ROW 1: UI/UX ── -->
+    <section class="project-section">
+        <div class="section-label">
+            <h2>UI / UX</h2>
+        </div>
+        <div class="card-grid">
+
+            <!-- Card 1 — has the portfolio thumbnail -->
+            <div class="project-card" data-title="Personal Portfolio" data-desc="   Personal portfolio website designed in Figma.
+                        Features a dark theme with flame accents, smooth scroll navigation,
+                        and a fully responsive layout." data-chips="HTML,CSS, Figma"
+                data-images="./assets/kj_portfolio_preview.png">
+                <img class="card-thumb" src="./assets/kj_portfolio_preview.png" alt="KJ Portfolio screenshot" />
+                <div class="card-body">
+                    <!-- <span class="card-tag">UI/UX · Web Design</span> -->
+                    <h3 class="card-title">Personal Portfolio</h3>
+                    <p class="card-desc">
+                        Personal portfolio website designed in Figma.
+                        Features a dark theme with flame accents, smooth scroll navigation,
+                        and a fully responsive layout.
+                    </p>
+                    <div class="card-footer">
+                        <span class="chip-html chip">HTML</span>
+                        <span class="chip chip-css">CSS</span>
+                        <span class="chip chip-fig">Figma</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 — placeholder -->
+            <!-- <div class="project-card">
+                <div class="card-thumb-placeholder">🖼</div>
+                <div class="card-body">
+                    <span class="card-tag">UI/UX</span>
+                    <h3 class="card-title">Project Title</h3>
+                    <p class="card-desc">
+                        Brief description of the project — what problem it solves,
+                        your role, and what makes it stand out.
+                    </p>
+                    <div class="card-footer">
+                        <span class="chip">Figma</span>
+                        <span class="chip">Prototyping</span>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Card 3 — placeholder -->
+            <!-- <div class="project-card">
+                <div class="card-thumb-placeholder">🖼</div>
+                <div class="card-body">
+                    <span class="card-tag">UI/UX</span>
+                    <h3 class="card-title">Project Title</h3>
+                    <p class="card-desc">
+                        Brief description of the project — what problem it solves,
+                        your role, and what makes it stand out.
+                    </p>
+                    <div class="card-footer">
+                        <span class="chip">Wireframing</span>
+                        <span class="chip">User Research</span>
+                    </div>
+                </div>
+            </div>
+        -->
+        </div>
+    </section>
+
+    <!-- ── ROW 2: FRONT END ── -->
+    <section class="project-section">
+        <div class="section-label">
+            <h2>Front End</h2>
+        </div>
+        <!-- <div class="wide-card-grid"> -->
+
+        <div class="card-wide" data-title="Real Ones Create Website" data-desc=" Website for a small local business. Real Ones Create specialized in marketing
+                    and offering services to other local businesses. Some of the services offered were
+                    photography/videography, web design/hosting, SEO optimization, digital
+                    advertising, content creation, as well as social media management. I created this
+                    site to promote these services while also being responsible for the technical services
+                    that were provided by the company." data-chips="Angular,JavaScript,CSS"
+            data-images="./assets/roVideo.png, ./assets/roOptions.png, ./assets/roMobile.png">
+            <img src="./assets/realOnesSH.png" class="wide-thumb" />
+            <div class="wide-body">
+                <!-- <span class="card-tag">Front End</span> -->
+                <h3 class="card-title">Real Ones Create Website</h3>
+                <p class="card-desc">
+                    Website for a small local business. Real Ones Create specialized in marketing
+                    and offering services to other local businesses. Some of the services offered were
+                    photography/videography, web design/hosting, SEO optimization, digital
+                    advertising, content creation, as well as social media management. I created this
+                    site to promote these services while also being responsible for the technical services
+                    that were provided by the company.
+                </p>
+                <div class="card-footer">
+                    <span class="chip chip-angular">Angular</span>
+                    <span class="chip chip-js">JavaScript</span>
+                    <span class="chip chip-css">CSS</span>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+
+    </section>
+
+    <!-- ── ROW 3: BACK END ── -->
+    <section class="project-section">
+        <div class="section-label">
+            <h2>Back End</h2>
+        </div>
+        <div class="wide-card-grid">
+
+            <div class="card-wide" data-title="OBA Mobile App (pre-MVP)" data-desc="This was a mobile app created in React Native. All images or videos or from iOS.
+                    This app was created to provide mobile detailing and mechanic work for users.
+                    The app makes several calls to it's database using GCP to enhance user
+                    experience by providing access to an account where information about
+                    the user and their vehicle is stored. Using Stripe's API, payments were able to be accepted
+                    to provide the user with membership options." data-chips="GCP,React Native,TypeScript"
+                data-video="./assets/obaDemopt1.mp4, ./assets/obaDemopt2.mp4">
+                <img src="./assets/accountPage.png" class="wide-thumb" />
+                <div class="wide-body">
+                    <!-- <span class="card-tag">Back End</span> -->
+                    <h3 class="card-title">OBA Mobile App (pre-MVP)</h3>
+                    <p class="card-desc">
+                        This was a mobile app created in React Native. All images or videos or from iOS.
+                        This app was created to provide mobile detailing and mechanic work for users.
+                        The app makes several calls to it's database using GCP to enhance user
+                        experience by providing access to an account where information about
+                        the user and their vehicle is stored. Using Stripe's API, payments were able to be accepted
+                        to provide the user with membership options.
+                    </p>
+                    <div class="card-footer">
+                        <span class="chip chip-gcp">GCP</span>
+                        <span class="chip chip-react">React Native</span>
+                        <span class="chip chip-ts">Typescript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-wide" data-title="Food Finder 4110" data-desc=" FoodFinder 4110 is an Android based phone app that allows 
+                    basic functions to be performed that are necessary for the SeeFood API 
+                    to make the correct decisions. The client performs the necessary actions needed 
+                    to relay photos and results to and from the AWS. The FoodFinder app is 
+                    desirable because of its ease-of-use and innovative design." data-chips="Android Studio,AWS,Java"
+                data-images="./assets/pizza.png, ./assets/drdoran.png">
+                <img src="./assets/slide.png" class="wide-thumb" />
+                <div class="wide-body">
+                    <!-- <span class="card-tag">Back End</span> -->
+                    <h3 class="card-title">Food Finder 4110</h3>
+                    <p class="card-desc">
+                        FoodFinder 4110 is an Android based phone app that allows
+                        basic functions to be performed that are necessary for the SeeFood API
+                        to make the correct decisions. The client performs the necessary actions needed
+                        to relay photos and results to and from the AWS. The FoodFinder app is
+                        desirable because of its ease-of-use and innovative design.
+                    </p>
+                    <div class="card-footer">
+                        <span class="chip chip-as">Android Studio</span>
+                        <span class="chip chip-aws">AWS</span>
+                        <span class="chip chip-java">Java</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="back-wrap">
+        <a href="index.html" class="btn-primary">← Back to Home</a>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        Kendall R. Jefferson, 2026©
+    </footer>
+
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal" id="modal">
+            <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+            <div class="modal-video" id="modal-video"></div>
+            <div class="modal-body">
+                <span class="modal-tag" id="modal-tag"></span>
+                <h2 class="modal-title" id="modal-title"></h2>
+                <p class="modal-desc" id="modal-desc"></p>
+                <div class="modal-chips" id="modal-chips"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
