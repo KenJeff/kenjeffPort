@@ -136,13 +136,38 @@ nav {
 /* .hero-text h1 span {
   color: var(--orange);
 } */
+.subCont {
+  display: flex;
+}
 
+.subCont img {
+  width: 0.45rem;
+  height: 0.45rem;
+  align-self: center;
+  margin-left: 2px;
+}
+.resumeLink {
+  display: flex;
+  margin-left: 5%;
+}
 .hero-text .subtitle {
   font-family: "Syne", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
   color: var(--vanilla);
-  margin-bottom: 1.4rem;
+  margin-bottom: 0;
+}
+
+.sub {
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  font-size: 0.5rem;
+  color: var(--naval);
+  align-self: center;
+  margin-left: 5%;
+  opacity: 0.5;
+  text-decoration: underline;
+  /* border: purple solid 1px; */
 }
 
 .btn-primary {
@@ -220,10 +245,6 @@ hr.divider {
   color: transparent;
   -webkit-text-fill-color: transparent;
 }
-
-.aboutText h2 {
-}
-
 #objective p {
   max-width: 575px;
   margin: 0 auto;
@@ -554,5 +575,15 @@ section,
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .subCont {
+    display: flex;
+    padding: 0 1rem;
+  }
+
+  .flame-left,
+  .flame-right {
+    width: 60%;
   }
 }
