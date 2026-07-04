@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KJ Portfolio – Kendall Jefferson</title>
-    <script src="projects.js"></script>
+    <script src="projects.js" defer></script>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Syne:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap"
@@ -21,7 +21,15 @@
     <!-- NAV -->
     <nav>
         <span class="nav-brand"><a href="./index.html#">KJ Portfolio</a></span>
-        <ul class="nav-links">
+
+        <!-- Hamburger button -->
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
             <li><a href="./index.html#about">About</a></li>
             <li><a href="./index.html#skills">Skills</a></li>
             <li><a href="./projects.html">Projects</a></li>
@@ -62,41 +70,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Card 2 — placeholder -->
-            <!-- <div class="project-card">
-                <div class="card-thumb-placeholder">🖼</div>
-                <div class="card-body">
-                    <span class="card-tag">UI/UX</span>
-                    <h3 class="card-title">Project Title</h3>
-                    <p class="card-desc">
-                        Brief description of the project — what problem it solves,
-                        your role, and what makes it stand out.
-                    </p>
-                    <div class="card-footer">
-                        <span class="chip">Figma</span>
-                        <span class="chip">Prototyping</span>
-                    </div>
-                </div>
-            </div> -->
-
-            <!-- Card 3 — placeholder -->
-            <!-- <div class="project-card">
-                <div class="card-thumb-placeholder">🖼</div>
-                <div class="card-body">
-                    <span class="card-tag">UI/UX</span>
-                    <h3 class="card-title">Project Title</h3>
-                    <p class="card-desc">
-                        Brief description of the project — what problem it solves,
-                        your role, and what makes it stand out.
-                    </p>
-                    <div class="card-footer">
-                        <span class="chip">Wireframing</span>
-                        <span class="chip">User Research</span>
-                    </div>
-                </div>
-            </div>
-        -->
         </div>
     </section>
 
@@ -222,6 +195,7 @@
             </div>
         </div>
     </div>
+
 
 </body>
 

@@ -17,8 +17,16 @@
 
     <!-- NAV -->
     <nav>
-        <span class="nav-brand"><a href="#">KJ Portfolio</a></span>
-        <ul class="nav-links">
+        <a href="index.html" class="nav-brand">KJ Portfolio</a>
+
+        <!-- Hamburger button -->
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="./projects.html">Projects</a></li>
@@ -173,24 +181,37 @@
         Kendall R. Jefferson, 2026©
     </footer>
 
-    <script type="module">
-        // Import the functions you need from the SDKs you need
+    <script type="module" defer>
         import { initializeApp } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-app.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
 
-        // Your web app's Firebase configuration
         const firebaseConfig = {
-            apiKey: "AIzaSyAFJUlKCD_E-7y0oq67u--9D0D6ZurJrlM",
-            authDomain: "coolportfolio97.firebaseapp.com",
-            projectId: "coolportfolio97",
-            storageBucket: "coolportfolio97.firebasestorage.app",
-            messagingSenderId: "298997302881",
-            appId: "1:298997302881:web:c1f64e2bd47159935d8c20"
+            apiKey: "AIzaSyB6QTV4SH3Ge9BfTcars199DsqUB7lKTtg",
+            authDomain: "kenjeffportfolio.firebaseapp.com",
+            projectId: "kenjeffportfolio",
+            storageBucket: "kenjeffportfolio.firebasestorage.app",
+            messagingSenderId: "726034641886",
+            appId: "1:726034641886:web:f5cf9f7dfd65a5fd00634f"
         };
 
-        // Initialize Firebase
         const app = initializeApp(firebaseConfig);
+
+        // ✅ match the actual IDs in your HTML
+        const hamburger = document.getElementById("nav-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("open");
+            navLinks.classList.toggle("open");
+            hamburger.setAttribute("aria-expanded", hamburger.classList.contains("open"));
+        });
+
+        document.querySelectorAll(".nav-links a").forEach(link => {
+            link.addEventListener("click", () => {
+                hamburger.classList.remove("open");
+                navLinks.classList.remove("open");
+                hamburger.setAttribute("aria-expanded", "false");
+            });
+        });
     </script>
 
 </body>

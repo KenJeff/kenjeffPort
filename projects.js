@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalDesc = document.getElementById('modal-desc');
     const modalChips = document.getElementById('modal-chips');
     const modalBox = document.getElementById('modal');
+    const hamburger = document.getElementById("nav-toggle");
+    const navLinks = document.getElementById("nav-links");
 
     let currentSlide = 0;
     let slides = [];
@@ -278,6 +280,22 @@ document.addEventListener('DOMContentLoaded', () => {
     closeBtn.addEventListener('mouseleave', () => {
         closeBtn.style.background = 'transparent';
         closeBtn.style.color = '#fc6600';
+    });
+
+
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("open");   // ✅ open not active
+        navLinks.classList.toggle("open");    // ✅ open not active
+        hamburger.setAttribute("aria-expanded", hamburger.classList.contains("open"));
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+            hamburger.classList.remove("open");  // ✅ open not active
+            navLinks.classList.remove("open");   // ✅ open not active
+            hamburger.setAttribute("aria-expanded", "false");
+        });
     });
 
 });
