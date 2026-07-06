@@ -633,6 +633,8 @@ section,
     display: flex;
     padding: 0 1rem;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .flame-left,
