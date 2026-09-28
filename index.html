@@ -61,16 +61,91 @@
 
     <!-- OBJECTIVE -->
     <section id="objective">
-        <img class="flame-left" src="./assets/fireFlame.png" alt="" />
-        <img class="flame-right" src="./assets/fireFlame.png" alt="" />
+        <svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden;">
+            <defs>
+                <linearGradient id="grad-outer" x1="0" y1="1" x2="0.15" y2="0">
+                    <stop offset="0%" stop-color="var(--rust)" />
+                    <stop offset="55%" stop-color="var(--naval)" />
+                    <stop offset="100%" stop-color="#ffb35c" />
+                </linearGradient>
+                <linearGradient id="grad-mid" x1="0.1" y1="1" x2="-0.1" y2="0">
+                    <stop offset="0%" stop-color="var(--naval)" />
+                    <stop offset="60%" stop-color="#ff9a3c" />
+                    <stop offset="100%" stop-color="#ffd9a0" />
+                </linearGradient>
+                <linearGradient id="grad-inner" x1="-0.05" y1="1" x2="0.2" y2="0">
+                    <stop offset="0%" stop-color="#ff9a3c" />
+                    <stop offset="65%" stop-color="#ffd9a0" />
+                    <stop offset="100%" stop-color="var(--vanilla)" />
+                </linearGradient>
+                <filter id="soften" x="-40%" y="-40%" width="180%" height="180%">
+                    <feGaussianBlur stdDeviation="1.1" />
+                </filter>
+                <filter id="soften-tight" x="-40%" y="-40%" width="180%" height="180%">
+                    <feGaussianBlur stdDeviation="0.55" />
+                </filter>
+            </defs>
+        </svg>
+
+        <svg class="flame-left" viewBox="0 0 200 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"
+            focusable="false">
+            <path class="tongue tongue-outer" fill="url(#grad-outer)" opacity="0.85" filter="url(#soften)" d="M97,300 C55,278 22,240 28,192 C32,160 52,150 46,118
+       C42,96 24,86 34,58 C44,32 58,40 62,18
+       C72,46 66,64 84,74 C96,80 92,54 100,26
+       C112,50 104,72 118,92 C132,110 128,86 138,64
+       C150,92 138,116 150,140 C164,166 178,150 172,182
+       C166,214 182,206 168,240 C156,268 148,252 132,278
+       C120,296 108,292 97,300 Z" />
+            <path class="tongue tongue-mid" fill="url(#grad-mid)" opacity="0.8" filter="url(#soften)" d="M99,300 C70,282 52,252 58,214 C61,192 76,184 71,158
+       C68,140 56,132 64,110 C72,88 82,96 86,78
+       C94,100 88,114 102,122 C112,128 108,106 116,84
+       C126,104 118,122 130,138 C142,154 138,134 148,116
+       C158,138 148,158 158,178 C170,200 180,188 172,214
+       C164,240 176,234 164,262 C154,284 146,270 132,290
+       C122,300 110,296 99,300 Z" />
+            <path class="tongue tongue-inner" fill="url(#grad-inner)" opacity="0.9" filter="url(#soften-tight)" d="M100,300 C82,286 70,262 76,234 C79,218 90,212 86,192
+       C84,178 75,172 82,154 C89,138 96,144 100,130
+       C106,146 101,158 111,164 C118,168 116,150 122,134
+       C130,150 124,164 133,176 C142,188 139,172 146,158
+       C154,174 147,188 154,204 C163,220 170,212 165,232
+       C160,252 168,248 160,268 C154,284 148,274 138,288
+       C130,296 118,294 100,300 Z" />
+        </svg>
+
+        <svg class="flame-right" viewBox="0 0 200 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"
+            focusable="false">
+            <path class="tongue tongue-outer" fill="url(#grad-outer)" opacity="0.85" filter="url(#soften)" d="M97,300 C55,278 22,240 28,192 C32,160 52,150 46,118
+       C42,96 24,86 34,58 C44,32 58,40 62,18
+       C72,46 66,64 84,74 C96,80 92,54 100,26
+       C112,50 104,72 118,92 C132,110 128,86 138,64
+       C150,92 138,116 150,140 C164,166 178,150 172,182
+       C166,214 182,206 168,240 C156,268 148,252 132,278
+       C120,296 108,292 97,300 Z" />
+            <path class="tongue tongue-mid" fill="url(#grad-mid)" opacity="0.8" filter="url(#soften)" d="M99,300 C70,282 52,252 58,214 C61,192 76,184 71,158
+       C68,140 56,132 64,110 C72,88 82,96 86,78
+       C94,100 88,114 102,122 C112,128 108,106 116,84
+       C126,104 118,122 130,138 C142,154 138,134 148,116
+       C158,138 148,158 158,178 C170,200 180,188 172,214
+       C164,240 176,234 164,262 C154,284 146,270 132,290
+       C122,300 110,296 99,300 Z" />
+            <path class="tongue tongue-inner" fill="url(#grad-inner)" opacity="0.9" filter="url(#soften-tight)" d="M100,300 C82,286 70,262 76,234 C79,218 90,212 86,192
+       C84,178 75,172 82,154 C89,138 96,144 100,130
+       C106,146 101,158 111,164 C118,168 116,150 122,134
+       C130,150 124,164 133,176 C142,188 139,172 146,158
+       C154,174 147,188 154,204 C163,220 170,212 165,232
+       C160,252 168,248 160,268 C154,284 148,274 138,288
+       C130,296 118,294 100,300 Z" />
+        </svg>
 
         <div class="aboutText">
             <h2>My Objective</h2>
             <p>
-                I am looking for an opportunity to utilize my skills to benefit an
-                organization in the performance of their mission which<br> will
-                also help in my professional growth. I'm<br> a hard
-                worker that will go the extra<br> mile
+                I am looking for an opportunity to utilize <br class="obj-break-mobile"> my skills to benefit an
+                organization in the<br class="obj-break-mobile"> performance of their
+                mission which<br class="obj-break-desktop"> <br class="obj-break-mobile"> will also help in my
+                professional<br class="obj-break-mobile"> growth. I'm<br class="obj-break-desktop"> a hard worker <br
+                    class="obj-break-mobile">
+                that will go the extra<br class="obj-break-desktop"> mile <br class="obj-break-mobile">
                 to get the job done!
             </p>
 
